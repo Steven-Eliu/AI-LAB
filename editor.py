@@ -26,3 +26,10 @@ for i in range (len(arreglo)):
 
 print(arreglo2)    
 
+archivo = open('editado.csv', 'w')
+with archivo:
+    #Escribir en el archvio
+    escritor = csv.writer(archivo)
+    escritor.writerows(arreglo2)
+
+print('Escritura exitosa')
