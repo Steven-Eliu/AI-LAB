@@ -11,6 +11,8 @@ y en otro programa pedir nombre y contraseña'''
 
 import csv
 
+from sqlalchemy import false
+
 datos = [['Nombre', 'Contraseña'], ['Cañedo', 'Ailab'], ['Steven', 'Hola'], ['Tita', 'Perra'], ['Pinky', 'Shihuhua']]
 
 archivo = open('base.csv', 'w')
@@ -19,4 +21,12 @@ with archivo:
     escritor = csv.writer(archivo)
     escritor.writerows(datos)
 
+valido = false
+
+def validar(valor):
+    return False
+
+while not valido:
+    valor = [datos['Nombre']]
+    valido = validar(valor)
 

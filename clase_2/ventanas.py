@@ -20,5 +20,5 @@ from tkinter import messagebox as ms
 valor = ms.askokcancel(message='Desea continuar', title= 'Pregunta')
 print(valor)
 
-valor = ms.askyesno(message='Desea continiar', title='pregunta')
+valor = ms.askyesno(message='Desea continuiar', title='pregunta')
 print(valor)

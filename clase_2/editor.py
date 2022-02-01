@@ -1,7 +1,6 @@
 #Este es el editor
 
 import csv
-from os import lseek
 import random
 
 arreglo = []
