@@ -4,6 +4,7 @@
 
 from tkinter import *
 from tkinter import messagebox as mss
+from turtle import color
 
 # Nombrar la ventana
 ventana = Tk()
@@ -30,7 +31,15 @@ def Val():
             # print('Valor incorrecto')
         # print('Se presiono el boton')
 
-
+def cambio():
+    T = Sp1.get()
+    if (T == 'black' or T == 'blue'):
+        L1.config(fg='white')
+    else:
+        L1.config(fg='black')
+        
+    ventana.config(bg = T)
+    L1.config(bg=T)
 
 # Entrada de datos
 E1 = Entry(ventana)
@@ -45,6 +54,10 @@ L1.place(x = 10, y = 2)
 
 B1 = Button(ventana, text = 'Validar', command=Val)
 B1.place(x = 10, y = 50)
+
+colores = ['red', 'black', 'blue', 'white', 'pink', 'gray']
+Sp1 = Spinbox(ventana, values=colores, command=cambio)
+Sp1.place(x=10, y=75)
 
 ventana.mainloop()
 
