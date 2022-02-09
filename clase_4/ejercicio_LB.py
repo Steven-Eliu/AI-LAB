@@ -10,11 +10,11 @@ le calcule a que grupo pertenece
 import csv
 from tkinter import *
 from tkinter import messagebox as mss
-from turtle import pos, position
+from turtle import position
 
 # Se crea la ventana
 ventana = Tk()
-ventana.geometry('400x300', position('center'))
+ventana.geometry('400x300')
 ventana.title("Bayesiano")
 
 
