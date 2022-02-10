@@ -9,6 +9,7 @@ while (ingresar == 'Y') :
     Altura = input('Ingrese altura en CM, (ejem: 170): ')
     Peso = input('Ingrese el peso en KG:')
     No_pie = input('Ingrese el No de calzado: ')
+    # Asegurar que no se ingresen datos vacios
     if ((len(Clase) > 0) and (len(Altura) > 0) and (len(Peso) > 0) and (len(No_pie) > 0)):
         x.append(Clase)
         x.append(Altura)
@@ -25,3 +26,5 @@ with archivo:
     escritor.writerows(datos)
 
 print('Escritura exitosa')
+
+# Se creo la base de datos de nuestro proximo algoritmo
